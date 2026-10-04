@@ -1,0 +1,137 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" fill="none" role="img" aria-labelledby="title desc">
+  <title id="title">BloomFlash flower life cycle</title>
+  <desc id="desc">A faceless hand-to-hand flower delivery, a morning puja, a convenient return of used flowers, and blooms returning to soil.</desc>
+  <defs>
+    <linearGradient id="panel" x1="865" y1="68" x2="1530" y2="840" gradientUnits="userSpaceOnUse"><stop stop-color="#251817" stop-opacity=".32"/><stop offset="1" stop-color="#130f0e" stop-opacity=".48"/></linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f7e1ad"/><stop offset="1" stop-color="#c39857"/></linearGradient>
+    <linearGradient id="paper" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f8eddb"/><stop offset="1" stop-color="#dfc8a1"/></linearGradient>
+    <linearGradient id="wine" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#7d3542"/><stop offset="1" stop-color="#401b25"/></linearGradient>
+    <linearGradient id="sage" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#a6ab7b"/><stop offset="1" stop-color="#56634c"/></linearGradient>
+    <linearGradient id="soil" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#725036"/><stop offset="1" stop-color="#38291f"/></linearGradient>
+    <radialGradient id="dawn"><stop stop-color="#e9b975" stop-opacity=".38"/><stop offset="1" stop-color="#e9b975" stop-opacity="0"/></radialGradient>
+    <filter id="soft"><feGaussianBlur stdDeviation="24"/></filter>
+    <filter id="shadow" x="-.2" y="-.2" width="1.4" height="1.5"><feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#090605" flood-opacity=".4"/></filter>
+    <g id="flower">
+      <ellipse cx="0" cy="-9" rx="6" ry="12" fill="#d87942"/><ellipse cx="9" cy="-3" rx="6" ry="12" transform="rotate(60 9 -3)" fill="#e2924d"/><ellipse cx="6" cy="8" rx="6" ry="12" transform="rotate(125 6 8)" fill="#c96e3d"/><ellipse cx="-6" cy="8" rx="6" ry="12" transform="rotate(-125 -6 8)" fill="#e39a51"/><ellipse cx="-9" cy="-3" rx="6" ry="12" transform="rotate(-60 -9 -3)" fill="#d87942"/><circle r="4" fill="#f3d17c"/>
+    </g>
+    <g id="rose">
+      <ellipse cx="0" cy="-8" rx="7" ry="12" fill="#a94753"/><ellipse cx="8" cy="0" rx="7" ry="11" transform="rotate(70 8 0)" fill="#c96368"/><ellipse cx="-8" cy="0" rx="7" ry="11" transform="rotate(-70 -8 0)" fill="#8d3446"/><ellipse cy="8" rx="7" ry="10" fill="#b74d5a"/><circle r="4" fill="#e6a16f"/>
+    </g>
+    <g id="leaf"><path d="M0 0C15-20 34-17 40-14 34 5 16 17 0 0Z" fill="#697858"/><path d="M2 1 33-12" stroke="#a4a878" stroke-width="1.5"/></g>
+    <style>
+      .scene{opacity:0;animation:cycle 20s linear infinite}
+      .scene.one{animation-name:scene-one}.scene.two{animation-name:scene-two}.scene.three{animation-name:scene-three}.scene.four{animation-name:scene-four}
+      .petal{animation:drift 8s ease-in-out infinite;transform-box:fill-box;transform-origin:center}
+      .petal.p2{animation-delay:-2.5s}.petal.p3{animation-delay:-5s}
+      .glow{animation:breathe 8s ease-in-out infinite}
+      @keyframes scene-one{0%,21%{opacity:1}25%,96%{opacity:0}100%{opacity:1}}
+      @keyframes scene-two{0%,21%{opacity:0}25%,46%{opacity:1}50%,100%{opacity:0}}
+      @keyframes scene-three{0%,46%{opacity:0}50%,71%{opacity:1}75%,100%{opacity:0}}
+      @keyframes scene-four{0%,71%{opacity:0}75%,96%{opacity:1}100%{opacity:0}}
+      @keyframes drift{0%,100%{transform:translate3d(0,0,0) rotate(0deg)}50%{transform:translate3d(-12px,-22px,0) rotate(13deg)}}
+      @keyframes breathe{0%,100%{opacity:.28;transform:scale(.92)}50%{opacity:.64;transform:scale(1.08)}}
+      @media (prefers-reduced-motion: reduce){.scene,.petal,.glow{animation:none!important}.scene.one{opacity:1}.scene.two,.scene.three,.scene.four{opacity:0}}
+    </style>
+  </defs>
+
+  <ellipse class="glow" cx="1220" cy="430" rx="390" ry="370" fill="url(#dawn)"/>
+  <rect x="825" y="54" width="710" height="790" rx="34" fill="url(#panel)" stroke="#dfc894" stroke-opacity=".24"/>
+  <path d="M850 82h68M1444 816h65" stroke="url(#gold)" stroke-opacity=".7" stroke-width="2"/>
+
+  <!-- 01: A morning parcel changes hands. No faces are shown. -->
+  <g class="scene one" filter="url(#shadow)">
+    <circle cx="1210" cy="405" r="260" fill="url(#dawn)" opacity=".44"/>
+    <path d="M1100 186v-18c0-10 8-18 18-18h198c10 0 18 8 18 18v410h-234V186Z" fill="#ead9bd" fill-opacity=".09" stroke="#f1d9af" stroke-opacity=".26" stroke-width="2"/>
+    <path d="M1322 162h10v410h-10z" fill="#dabd89" fill-opacity=".4"/>
+    <path d="M1328 171h-93v391h93" stroke="#d4b77e" stroke-opacity=".32" stroke-width="2"/>
+    <path d="M852 587h620" stroke="#dcc59e" stroke-opacity=".25" stroke-width="2"/>
+    <!-- courier sleeve and forearm -->
+    <path d="M844 548c64-49 123-77 176-91l108 75c-76 55-152 94-226 120H844V548Z" fill="url(#wine)"/>
+    <path d="M1000 456c37-10 78-7 120 12 34 15 69 34 105 56l-33 67-177-57-45-78 30 0Z" fill="url(#paper)"/>
+    <path d="M1000 456c33-9 64-7 94 3l-17 72-39 21-64-39 26-57Z" fill="#b97d5d"/>
+    <!-- recipient sleeve and hand -->
+    <path d="M1533 427c-57-7-107-1-152 17l-104 89c69 34 139 53 209 57h47V427Z" fill="url(#sage)"/>
+    <path d="M1388 445c-34 1-64 13-91 34l-55 46 32 62 129-62 28-60-43-20Z" fill="#c58c6b"/>
+    <!-- wrapped flower parcel -->
+    <g transform="translate(1130 367)">
+      <path d="m-112 35 112-72 114 72-8 135h-212L-112 35Z" fill="url(#paper)" stroke="#f0d7a9" stroke-width="2"/>
+      <path d="m-112 35 112 58 114-58M0-37v130" stroke="#b58b58" stroke-opacity=".65" stroke-width="2"/>
+      <path d="M-46 76c18-27 73-27 91 0v33h-91V76Z" fill="#642632"/>
+      <path d="M-1 76v34" stroke="#dfc38c" stroke-width="2"/>
+      <text x="0" y="98" text-anchor="middle" fill="#f0d7a9" font-family="Georgia,serif" font-size="12" letter-spacing="2">BLOOMFLASH</text>
+      <g transform="translate(0 -69)"><path d="M0 42V4" stroke="#697858" stroke-width="3"/><use href="#flower" transform="translate(-24 12) scale(.9)"/><use href="#rose" transform="translate(4 0) scale(1.1)"/><use href="#flower" transform="translate(30 17) scale(.85)"/><use href="#leaf" transform="translate(-27 30) rotate(14) scale(.7)"/><use href="#leaf" transform="translate(8 32) rotate(185) scale(.65)"/></g>
+      <path d="M-130 186h260" stroke="#e5c892" stroke-width="2" stroke-dasharray="5 8" opacity=".7"/>
+    </g>
+    <g class="petal p1" transform="translate(1420 290)"><use href="#flower"/></g><g class="petal p2" transform="translate(930 327) scale(.6)"><use href="#rose"/></g>
+    <g transform="translate(900 744)"><circle r="22" fill="#e1c28a" fill-opacity=".15" stroke="#e1c28a" stroke-opacity=".65"/><text y="5" text-anchor="middle" fill="#f0d9ac" font-family="Arial,sans-serif" font-size="12">01</text><text x="38" y="5" fill="#f2e7d5" font-family="Arial,sans-serif" font-size="12" letter-spacing="2.3">GROWN WITH CARE · DELIVERED AT DAWN</text></g>
+  </g>
+
+  <!-- 02: Hands place the blooms at a small home altar. -->
+  <g class="scene two" filter="url(#shadow)">
+    <circle cx="1230" cy="414" r="255" fill="url(#dawn)" opacity=".35"/>
+    <path d="M1034 248c104-113 281-113 385 0M1092 245c74-77 193-77 269 0" stroke="#d6bd8f" stroke-opacity=".33" stroke-width="3"/>
+    <path d="M1228 207v68M1209 232h38" stroke="#d9c198" stroke-opacity=".28" stroke-width="3"/>
+    <path d="M1055 635h382M1090 635l28 51h274l28-51" stroke="#c9ad7b" stroke-opacity=".55" stroke-width="3"/>
+    <ellipse cx="1252" cy="611" rx="173" ry="38" fill="#d2b985" fill-opacity=".32" stroke="#dcca9b" stroke-opacity=".65" stroke-width="2"/>
+    <ellipse cx="1252" cy="601" rx="140" ry="26" fill="#251a17" fill-opacity=".7"/>
+    <path d="M1184 599c34 18 101 18 136 0l-14 37c-25 18-82 18-109 0l-13-37Z" fill="#b47d4b" stroke="#e4c489" stroke-width="2"/>
+    <path d="M1227 584c10-16 34-16 46 0l-10 26h-26l-10-26Z" fill="url(#gold)"/><path d="M1250 576c-14-26 14-36 11-57 20 21 10 37 1 48" fill="#f5b95e"/>
+    <g transform="translate(1200 575)"><use href="#flower" transform="translate(-90 8) scale(.8)"/><use href="#flower" transform="translate(-47 -8) scale(.72)"/><use href="#rose" transform="translate(80 6) scale(.82)"/><use href="#flower" transform="translate(45 -13) scale(.7)"/></g>
+    <!-- folded hands and flower offering -->
+    <path d="M1510 334c-53 12-99 39-139 82l-73 89 53 43 92-76 67-11V334Z" fill="url(#sage)"/>
+    <path d="M1325 460c-33 4-62 19-85 44l-40 47 34 46 62-38c26-10 48-24 66-42l-37-57Z" fill="#c68e6d"/>
+    <path d="M1245 515c-4 30 1 55 17 77 13 19 29 25 44 15 8-5 11-13 10-23l-11-40 18 29c10 16 24 20 36 12 9-6 11-16 5-28l-20-41" stroke="#dfae83" stroke-width="12" stroke-linecap="round"/>
+    <path d="M1284 534c-4-27 0-52 12-77" stroke="#73835e" stroke-width="4"/><use href="#flower" transform="translate(1295 444) scale(1.05)"/>
+    <g class="petal p1" transform="translate(1020 386)"><use href="#flower"/></g><g class="petal p3" transform="translate(1468 564) scale(.58)"><use href="#rose"/></g>
+    <g transform="translate(900 744)"><circle r="22" fill="#e1c28a" fill-opacity=".15" stroke="#e1c28a" stroke-opacity=".65"/><text y="5" text-anchor="middle" fill="#f0d9ac" font-family="Arial,sans-serif" font-size="12">02</text><text x="38" y="5" fill="#f2e7d5" font-family="Arial,sans-serif" font-size="12" letter-spacing="2.3">A MORNING OFFERING · A MOMENT OF PEACE</text></g>
+  </g>
+
+  <!-- 03: Used blooms are returned at the next convenient handoff. -->
+  <g class="scene three" filter="url(#shadow)">
+    <circle cx="1230" cy="414" r="255" fill="url(#dawn)" opacity=".32"/>
+    <path d="M883 584h610" stroke="#ddc89f" stroke-opacity=".3" stroke-width="2"/>
+    <path d="M846 521c63-44 124-64 185-61l132 71c-68 48-144 80-229 94H846V521Z" fill="url(#wine)"/>
+    <path d="M1006 470c45-13 95-3 143 28l79 46-37 67-145-61-62-42 22-38Z" fill="#c88f6d"/>
+    <!-- reusable return pouch -->
+    <g transform="translate(1194 470)">
+      <path d="M-112 23c0-18 15-32 34-32h160c19 0 34 14 34 32l-14 151h-199l-15-151Z" fill="#d9c49e" fill-opacity=".88" stroke="#efdab4" stroke-width="2"/>
+      <path d="M-82-9v-30h168V-9" stroke="#e4d09f" stroke-width="8" stroke-linecap="round"/>
+      <path d="M-60 38c37-18 75-18 115 0v27H-60V38Z" fill="#6e242f"/><text y="57" text-anchor="middle" fill="#f4dfb4" font-family="Arial,sans-serif" font-size="10" letter-spacing="1.8">RETURN BLOOMS</text>
+      <g transform="translate(0 102) scale(.82)"><use href="#flower" transform="translate(-53 -4)"/><use href="#rose" transform="translate(-22 -22)"/><use href="#flower" transform="translate(10 -2)"/><use href="#flower" transform="translate(44 -21)"/><use href="#rose" transform="translate(62 1)"/><path d="M-80 24c35 12 95 16 160 0" stroke="#74815c" stroke-width="3"/></g>
+      <path d="M-124 188h248" stroke="#e5c892" stroke-width="2" stroke-dasharray="5 8" opacity=".7"/>
+    </g>
+    <path d="M1534 409c-58-8-112 3-162 32l-71 49 41 64 111-42 81 4V409Z" fill="url(#sage)"/>
+    <path d="M1379 473c-31 4-59 19-81 41l-43 43 34 44 60-35c27-9 51-24 70-44l-40-49Z" fill="#d09a77"/>
+    <path d="M1255 540c-12 22-27 36-47 44-16 6-27 3-34-7-8-11-3-25 9-35l40-34" stroke="#ca8c6a" stroke-width="12" stroke-linecap="round"/>
+    <path d="M1230 511c-9 26-25 49-49 67" stroke="#73835e" stroke-width="4"/><use href="#flower" transform="translate(1174 587) scale(.7)"/><use href="#rose" transform="translate(1200 565) scale(.62)"/>
+    <g class="petal p2" transform="translate(1015 364)"><use href="#rose"/></g><g class="petal p3" transform="translate(1460 321) scale(.6)"><use href="#flower"/></g>
+    <g transform="translate(900 744)"><circle r="22" fill="#e1c28a" fill-opacity=".15" stroke="#e1c28a" stroke-opacity=".65"/><text y="5" text-anchor="middle" fill="#f0d9ac" font-family="Arial,sans-serif" font-size="12">03</text><text x="38" y="5" fill="#f2e7d5" font-family="Arial,sans-serif" font-size="12" letter-spacing="2.3">RETURN WHEN IT SUITS YOU · SAME DAY OR NEXT DAY</text></g>
+  </g>
+
+  <!-- 04: Returned flowers enrich the soil and begin another cycle. -->
+  <g class="scene four" filter="url(#shadow)">
+    <circle cx="1220" cy="410" r="265" fill="url(#dawn)" opacity=".35"/>
+    <path d="M886 657c155-86 357-105 614-29v94H886v-65Z" fill="url(#soil)" stroke="#c5a36e" stroke-opacity=".45" stroke-width="2"/>
+    <path d="M900 653c140-63 331-79 590-26" stroke="#a88158" stroke-opacity=".7" stroke-width="3" stroke-dasharray="2 12"/>
+    <g transform="translate(1222 640)">
+      <ellipse cy="43" rx="184" ry="50" fill="#291e18" fill-opacity=".45"/>
+      <path d="M-140-28c72-42 208-42 280 0l-20 97c-61 45-181 45-240 0l-20-97Z" fill="#865d45" stroke="#dbbd89" stroke-width="3"/>
+      <path d="M-137-29c70 29 204 28 274 0" stroke="#f0d8a8" stroke-width="8" stroke-linecap="round"/>
+      <path d="M-92-23c33-34 62-42 93-22 30-19 63-10 94 23" stroke="#718059" stroke-width="7" stroke-linecap="round"/>
+      <use href="#flower" transform="translate(-55 -30) scale(.8)"/><use href="#rose" transform="translate(2 -49) scale(.84)"/><use href="#flower" transform="translate(53 -25) scale(.75)"/>
+    </g>
+    <!-- a hand returns petals to the earth -->
+    <path d="M1518 264c-55 16-103 49-142 96l-85 94 48 44 102-78 77-22V264Z" fill="url(#sage)"/>
+    <path d="M1370 431c-30 6-55 23-77 47l-42 49 33 41 58-38c25-12 47-28 63-49l-35-50Z" fill="#c58c6a"/>
+    <path d="M1285 504c-20 26-32 50-36 73-3 18 6 29 20 30 12 1 20-7 24-21l10-37 4 39c2 17 12 25 24 23 13-2 18-13 14-32l-7-40" stroke="#d4a17b" stroke-width="12" stroke-linecap="round"/>
+    <!-- new sprout -->
+    <path d="M1222 606c-1-60 1-111 6-154" stroke="#97a776" stroke-width="7" stroke-linecap="round"/>
+    <path d="M1225 500c-48-48-93-41-111-28 21 43 60 61 111 28ZM1229 468c36-45 75-46 99-30-16 41-52 56-99 30Z" fill="#849568" stroke="#c3c38a" stroke-width="2"/>
+    <path d="M1190 459c26 17 37 28 37 42M1228 449c28 9 44 17 56 30" stroke="#d0ca95" stroke-opacity=".7" stroke-width="2"/>
+    <g class="petal p1" transform="translate(1015 436) scale(.68)"><use href="#flower"/></g><g class="petal p3" transform="translate(1470 366) scale(.54)"><use href="#rose"/></g>
+    <g transform="translate(900 744)"><circle r="22" fill="#e1c28a" fill-opacity=".15" stroke="#e1c28a" stroke-opacity=".65"/><text y="5" text-anchor="middle" fill="#f0d9ac" font-family="Arial,sans-serif" font-size="12">04</text><text x="38" y="5" fill="#f2e7d5" font-family="Arial,sans-serif" font-size="12" letter-spacing="2.3">USED BLOOMS RETURN TO SOIL · THE CYCLE STARTS AGAIN</text></g>
+  </g>
+
+  <path d="M970 785c70 29 192 29 262 0" stroke="#e5c892" stroke-opacity=".55" stroke-width="2" stroke-dasharray="3 9"/>
+  <circle cx="1215" cy="789" r="5" fill="#e5c892"/>
+</svg>

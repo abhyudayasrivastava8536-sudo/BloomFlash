@@ -1,0 +1,13 @@
+import rose from "@/assets/flowers/rose.jpeg";
+import marigold from "@/assets/flowers/marigold.jpeg";
+import lotus from "@/assets/flowers/lotus.jpeg";
+import hibiscus from "@/assets/flowers/hibiscus.jpeg";
+import guldaudi from "@/assets/flowers/guldaudi.jpeg";
+import roseGarland from "@/assets/flowers/rose-garland.jpeg";
+import marigoldGarland from "@/assets/flowers/marigold-garland.jpeg";
+import mixedGarland from "@/assets/flowers/mixed-garland.jpeg";
+import packBasic from "@/assets/flowers/pack-basic.jpeg";
+import packStandard from "@/assets/flowers/pack-standard.jpeg";
+import packPremium from "@/assets/flowers/pack-premium.jpeg";
+import packDeluxe from "@/assets/flowers/pack-deluxe.jpeg";
+export const flowerImages = { rose, marigold, lotus, hibiscus, guldaudi, roseGarland, marigoldGarland, mixedGarland, packBasic, packStandard, packPremium, packDeluxe } as const;
